@@ -1,0 +1,100 @@
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+.hero{
+    min-height: 100vh;
+    background-image: url('../img/vq-hero-bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__wrap{
+        flex-direction: column;
+        padding-top: 19rem;
+        align-items: center;
+        padding-bottom: 3.3rem;
+        position: relative;
+        &::before{
+            content: url('../img/vq-hero-gradi.webp');
+            filter: blur(7rem);
+            -webkit-filter: blur(7rem);
+            position: absolute;
+            bottom: 8rem;
+            max-width: 128rem;
+            width: 100%;
+            animation: pulse 4s ease-in-out infinite;
+        }
+    }
+    &__header{
+        text-align: center;
+        font-family: 'Agrandir';
+        font-size: 5.5rem;
+        font-weight: 300;
+        line-height: 120%;
+        max-width: 91rem;
+        &::before{
+            content: '';
+            
+        }
+    }
+    &__subheader{
+        text-align: center;
+        font-family: 'Lato';
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 3.5rem;
+    }
+    &__join{
+        border-radius: 0.6rem;
+        background: linear-gradient(167deg, #0CC7BC 0%, #19C5FB 100%);
+        box-shadow: 0px -4px 70px 0px rgba(12, 199, 188, 0.70);
+        display: inline-flex;
+        padding: 1.2rem 4rem;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: 5rem;
+    }
+    &__gif{
+            width: 65.8rem;
+            margin-bottom: 2rem;
+            z-index: 1;
+            &-container{
+                position: relative;
+                display: flex;
+                &::before{
+                    content: url('../img/vq-gif-left.svg');
+                    position: absolute;
+                    top: 0;
+                    transform: translateX(-50%);
+                    width: 2.5rem;
+                    height: 33.4rem;
+                }
+                &::after{
+                    content: url('../img/vq-gif-left.svg');
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translateX(50%);
+                    width: 2.5rem;
+                    height: 33.4rem;
+                }
+            }
+    }
+    &__subtitle{
+        color: #FFF;
+        text-align: center;
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 120%;
+    }
+}
