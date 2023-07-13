@@ -623,6 +623,9 @@ a {
   width: 65.8rem;
   margin-bottom: 2rem;
   z-index: 1;
+  border-radius: 1.5rem;
+  border: 1px solid #0CC7BC;
+  height: 33.4rem;
 }
 .hero__gif-container {
   position: relative;
@@ -652,4 +655,192 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 120%;
+}
+
+.compare__wrap {
+  padding: 8rem 0;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 112rem;
+  margin: 0 auto;
+  align-items: flex-end;
+  position: relative;
+}
+.compare__wrap::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  background-image: url("../img/vq-compare-bird.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60rem;
+  width: 100vw;
+}
+.compare__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+.compare__left-header {
+  background: linear-gradient(90deg, #19C5FB 0%, #0CC7BC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Agrandir";
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.compare__left .compare__item {
+  border-radius: 1rem;
+  background: linear-gradient(270deg, #0DC4B9 0%, #010B0A 7.81%, #010B0A 91.67%, #0DC4B9 100%);
+  position: relative;
+  z-index: 100;
+  height: 6.8rem;
+}
+.compare__left .compare__item:nth-child(2) {
+  margin-top: -2rem;
+}
+.compare__left .compare__item:nth-child(1) {
+  height: 12rem;
+}
+.compare__left .compare__item:nth-child(1)::after {
+  height: 11.8rem;
+}
+.compare__left .compare__item::after {
+  content: "";
+  width: 32.8rem;
+  height: 6.6rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  border-radius: 1rem;
+  z-index: -10;
+  background: linear-gradient(270deg, #021814 0%, #010B0A 100%);
+}
+.compare__item {
+  gap: 0.5rem;
+  padding: 2.5rem;
+  width: 33rem;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 150%;
+}
+.compare__item img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}
+.compare__item strong {
+  font-weight: 900;
+}
+.compare__child {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  gap: 4rem;
+}
+.compare__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.compare__center {
+  min-width: 38.2rem;
+}
+.compare__center-item {
+  background: linear-gradient(90deg, #19C5FB 0%, #0CC7BC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1.6rem 4.4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Agrandir";
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  position: relative;
+  width: 38.2rem;
+  height: 6.8rem;
+  text-align: center;
+}
+.compare__center-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38.2rem;
+  height: 6.8rem;
+  border-radius: 1.1rem;
+  background: linear-gradient(224deg, #19C5FB 0%, #0CC7BC 100%);
+  z-index: -1;
+}
+.compare__center-item::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  background: linear-gradient(45deg, #04322E 0%, #093235 100%);
+  width: 38rem;
+  height: 6.6rem;
+  border-radius: 1.1rem;
+}
+.compare__right-header {
+  background: linear-gradient(90deg, #C70C0C 0%, #0CC7BC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Agrandir";
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.compare__right .compare__item {
+  border-radius: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(270deg, #C70C0C 0%, #010B0A 7.81%, #010B0A 91.67%, #C70C0C 100%);
+  position: relative;
+  z-index: 100;
+  height: 6.8rem;
+}
+.compare__right .compare__item-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+}
+.compare__right .compare__item:nth-child(2) {
+  margin-top: -2rem;
+}
+.compare__right .compare__item:nth-child(1) {
+  height: 12rem;
+  display: block;
+}
+.compare__right .compare__item:nth-child(1)::after {
+  height: 11.8rem;
+}
+.compare__right .compare__item::after {
+  content: "";
+  width: 32.8rem;
+  height: 6.6rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  border-radius: 1rem;
+  z-index: -10;
+  border-radius: 1rem;
+  background: linear-gradient(270deg, #010B0A 0%, #021814 100%);
 }
