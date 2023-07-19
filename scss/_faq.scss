@@ -1,0 +1,38 @@
+
+.accordion__content {
+    display: none; /* Initially hide all accordion content */
+  }
+  .accordion__header {
+    cursor: pointer; /* Make it clear the headers are clickable */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    span{
+        padding: 1rem;
+        border-radius: 5rem;
+        background-color: #0CC7BB;
+        color: #010C0A;
+        height: 2rem;
+        width: 2rem;
+    }
+  }
+  .faq{
+    &__wrap{
+        padding: 8rem 0;
+        flex-direction: column;
+        gap: 8rem;
+        justify-content: center;
+    }
+    &__header{
+        text-align: center;
+        font-family: 'Agrandir';
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: 130%;
+    }
+    &__grouper{
+        display: flex;
+        gap: 20rem;
+        justify-content: center;
+    }
+  }

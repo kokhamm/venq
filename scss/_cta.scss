@@ -1,0 +1,84 @@
+
+.cta{
+    padding: 8rem 0;
+    &__wrap{
+        justify-content: center;
+        background-image: url('../img/vq-cta-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 8rem;
+        flex-direction: column;
+        border-radius: 2rem;
+        box-shadow: 0px 0px 50px 0px rgba(12, 199, 188, 0.50);
+    }
+    &__header{
+        font-family: 'Agrandir';
+        font-size: 3.2rem;
+        font-weight: 800;
+        letter-spacing: 0.128rem;
+        margin-bottom: 1rem;
+    }
+    &__red{
+        background: var(--radial, radial-gradient(881.21% 28.86% at 73.35% 61.83%, #FB7819 0%, #C70C0C 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__subheader{
+        font-family: 'Agrandir';
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 120%;
+        letter-spacing: 0.064rem;
+        margin-bottom: 4.2rem;
+    }
+    &__item{
+        font-family: 'Lato';
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0.064rem;
+        padding-inline-start: 2rem;
+        position: relative;
+        max-width: 45rem;
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            -moz-border-radius: 7.5px;
+            -webkit-border-radius: 7.5px;
+            border-radius: 7.5px;
+            background-color: #0CC7BC;
+            filter: drop-shadow(0px 0px 4px #0CC7BC);
+        }
+    }
+    &__list{
+        margin-bottom: 4rem;
+    }
+    &__aheader{
+        font-family: 'Agrandir';
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 120%;
+        letter-spacing: 0.064rem;
+        margin-bottom: 5rem;
+    }
+    &__link{
+        border-radius: 0.5rem;
+        background: linear-gradient(90deg, #0CC7BC 0%, #19C5FB 100%);
+        padding: 1rem 2rem;
+        color: #010C0A;
+        font-family: 'Lato';
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 150%;
+        width: max-content;
+    }
+}

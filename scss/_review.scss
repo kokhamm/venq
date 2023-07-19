@@ -1,0 +1,151 @@
+
+.review{
+    position: relative;
+    &::before{
+        content: url('../img/vq-review-bl.svg');
+        position: absolute;
+        left: 0;
+        top: 16rem;
+    }
+    &::after{
+        content: url('../img/vq-review-br.svg');
+        position: absolute;
+        right: 0;
+        top: 16rem;
+    }
+    &__container{
+        max-width: initial;
+    }
+    &__wrap{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10rem;
+        padding: 8rem 0;
+    }
+    &__header{
+        text-align: center;
+        font-family: 'Agrandir';
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: 120%;
+        letter-spacing: 0.128rem;
+    }
+    &__head{
+        position: relative;
+        &::before{
+            content: url('../img/vq-release-left-boy.svg');
+            position: absolute;
+            width: 4.8rem;
+            height: 4.2rem;
+            left: 23%;
+            top: -0.2rem;
+        }
+        &::after{
+            content: url('../img/vq-release-right-boy.svg');
+            position: absolute;
+            width: 4.8rem;
+            height: 4.2rem;
+            right: 23%;
+            top: -0.2rem;
+        }
+    }
+    &__body{
+        display: flex;
+        &-wrapper{
+            overflow-x: scroll;
+            padding: 2rem 0;
+        }
+        width: min-content;
+        gap: 2rem;
+    }
+    &__name{
+        font-family: 'Agrandir';
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    &__position{
+        color: #9292A3;
+        font-family: 'Lato';
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__paragraph{
+        font-family: 'Lato';
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__paragraph-hidden{
+        color: #9292A3;
+        font-family: 'Lato';
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 150%;
+        display: none;
+        padding-top: 2rem;
+    }
+    &__middle{
+        display: flex;
+        flex-direction: column;
+        // gap: 3rem;
+    }
+    &__item{
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+        background: rgba(255, 255, 255, 0.03);
+        display: flex;
+        height: max-content;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+        &:nth-child(1){
+            width: 32rem;
+            margin-left: 13rem;
+        }
+        &:nth-child(2){
+            width: 33rem;
+        }
+        &:nth-child(3){
+            width: 40rem;
+        }
+        &:nth-child(4){
+            width: 30rem;
+        }
+        &:nth-child(5){
+            width: 32rem;
+            margin-right: 13rem;
+        }
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        &-left{
+            img{
+                border-radius: 1.5rem;
+            }
+        }
+    }
+    &__bot{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        cursor: pointer;
+        transform: translate(-50%, 50%);
+    }
+    &__button{
+        color: #010C0A;
+        font-family: 'Lato';
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        border-radius: 0.5rem;
+        background: linear-gradient(90deg, #0CC7BC 0%, #19C5FB 100%);
+        padding: 0.2rem 1.7rem;
+    }
+}

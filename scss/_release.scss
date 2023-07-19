@@ -1,0 +1,118 @@
+
+.release{
+    background-image: url('../img/vq-release-line.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    &__wrap{
+        padding: 8rem 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10rem;
+    }
+    &__head{
+        position: relative;
+        &::before{
+            content: url('../img/vq-release-left-boy.svg');
+            position: absolute;
+            width: 4.8rem;
+            height: 4.2rem;
+            left: 18%;
+            top: -0.2rem;
+        }
+        &::after{
+            content: url('../img/vq-release-right-boy.svg');
+            position: absolute;
+            width: 4.8rem;
+            height: 4.2rem;
+            right: 18%;
+            top: -0.2rem;
+        }
+    }
+    &__header{
+        text-align: center;
+        color: #FFF;
+        font-family: 'Agrandir';
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: 120%;
+        letter-spacing: 0.128rem;
+    }
+    &__top{
+        display: flex;
+        gap: 12rem;
+        margin-bottom: 5rem;
+        // align-items: flex-end;
+        justify-content: end;
+        .release__item:nth-child(3){
+            .release__item-header{
+                background: var(--radial, radial-gradient(881.21% 28.86% at 73.35% 61.83%, #FB7819 0%, #C70C0C 100%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .release__item-name{
+            max-width: 20rem;
+        }
+    }
+    &__bot{
+        display: flex;
+        margin-left: 11rem;
+        gap: 11rem;
+        padding-bottom: 2rem;
+        align-items: flex-end;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6rem;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &-header{
+            font-family: 'Agrandir';
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 120%;
+            letter-spacing: 0.08rem;
+            background: var(--radial, radial-gradient(1627.18% 53.29% at 82.37% 27.50%, #19C5FB 0%, #0CC7BC 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &-name{
+            font-family: 'Agrandir';
+            font-size: 2.4rem;
+            font-weight: 300;
+            line-height: 120%;
+            letter-spacing: 0.096rem;
+            margin-bottom: 2rem;
+        }
+        &-bullet{
+            font-family: 'Lato';
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: 0.072rem;
+            padding-inline-start: 2rem;
+            position: relative;
+            max-width: 25rem;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0.6rem;
+                display: inline-block;
+                width: 1rem;
+                height: 1rem;
+                -moz-border-radius: 7.5px;
+                -webkit-border-radius: 7.5px;
+                border-radius: 7.5px;
+                background-color: #F2F2F2;
+            }
+        }
+    }
+}
