@@ -31,16 +31,13 @@ $(document).ready(function() {
   $(".accordion__header").click(function() {
     // First close all open accordions
     $(".accordion__content").slideUp();
-    $(".accordion__icon").text("+");
   
     // If the clicked accordion was already open, leave it closed
     if($(this).next(".accordion__content").is(":visible")) {
       $(this).next(".accordion__content").slideUp();
-      $(this).children(".accordion__icon").text("+");
     } else {
       // Otherwise, open the clicked accordion and change the icon to "-"
       $(this).next(".accordion__content").slideDown();
-      $(this).children(".accordion__icon").text("-");
     }
   });  
 });
